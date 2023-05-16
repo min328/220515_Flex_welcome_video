@@ -1,0 +1,79 @@
+@import url(reset.css);
+
+/* section#welcome */
+section#welcome {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to left, #000, transparent);
+}
+
+#welcome div#heading {
+  width: 80%;
+  text-align: center;
+}
+
+#heading h1 {
+  color: cyan;
+  line-height: 3em;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+#heading p {
+  color: #eee;
+}
+/* ########## Using position ########## */
+/* #welcome video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+} */
+
+/* #welcome video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* ########## Using object-fit ########## */
+#welcome video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* section#welcome */
+
+/* section#content */
+section#content {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content div#inner {
+  width: 1280px;
+  display: flex;
+  gap: 70px;
+
+}
+#inner div h2 {
+  line-height: 2.5em;
+}
+/* section#content */
